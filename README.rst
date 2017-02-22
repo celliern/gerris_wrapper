@@ -8,7 +8,7 @@ The main goal is to ensure a stable behaviour across platform and easier way to 
 Install
 =======
 
-For now, the package is available on PyPI, and via the github repo.
+For now, the package is not available on PyPI, only on the github repo.
 
 .. code:: shell
 
@@ -29,8 +29,10 @@ very simple use:
 
 .. code:: python
 
-    from gerris_wrapper import run
-    result = run('in.gfs')
+    from gerris_wrapper import run,
+    run('simulation.gfs', 'results.gfs')
+
+the library provide a way to split and parallelize the simulation. (TODO)
 
 API
 ===
